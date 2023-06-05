@@ -1,5 +1,6 @@
 import React from 'react';
 import Chart from 'react-google-charts';
+import './App.css';
 
 const data = [
   ['Task', 'Hours per Day'],
@@ -11,13 +12,13 @@ const data = [
 
 const options = {
   title: 'My Daily Routine',
-  pieHole: 0.4,
+ 
 };
 
 const App = () => {
   return (
     <div className="App">
-      <h1>Pie Chart Example</h1>
+      <h1>Pie Chart</h1>
       <Chart
         chartType="PieChart"
         data={data}
